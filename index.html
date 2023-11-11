@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="notransitions">
+    <div id="config_screen">
+        <h1>Tic Tac Toe</h1>
+        <h3 id="subheader"></h3>
+
+        <div class="divider"></div>
+
+        <label for="size">
+            Size
+            <input type="number" min="3" value="3" name="size" id="size">
+        </label>
+        <label for="checks">
+            Win Condition
+            <input type="number" min="3" value="3" name="checks" id="checks">
+        </label>
+
+        <div class="divider"></div>
+
+        <div class="btn_container">
+            <button id="start">Start</button>
+        </div>
+
+        <span id="error_message"></span>
+    </div>
+
+
+    <div id="game">
+        <div id="game-stats">
+            <span>Current Turn: <strong id="current-turn">X</strong></span>
+        </div>
+    
+        <canvas id="canvas" width="500" height="500">
+            Canvas isn't supported by your browser!    
+        </canvas>
+    
+        <button id="back_btn">Back</button>
+    </div>
+</body>
+</html> 
