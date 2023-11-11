@@ -94,7 +94,6 @@ class TicTacToe {
     }
 
     _checkWinCondition(startX, startY, marker) {
-        console.log(this.freeCells);
         if (this.freeCells <= 0) {
             this.gameOver("tie");
             return;
