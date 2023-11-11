@@ -68,8 +68,8 @@ class TicTacToe {
 
         this.grid[x][y] = marker;
         this._setTurn(marker === "x" ? "o" : "x");
-        this._checkWinCondition(x, y, marker);
         this.freeCells--;
+        this._checkWinCondition(x, y, marker);
     }
 
     _setTurn(marker) {
@@ -94,6 +94,7 @@ class TicTacToe {
     }
 
     _checkWinCondition(startX, startY, marker) {
+        console.log(this.freeCells);
         if (this.freeCells <= 0) {
             this.gameOver("tie");
             return;
